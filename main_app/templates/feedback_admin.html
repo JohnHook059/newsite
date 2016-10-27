@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="box visible">
+        {% for comment in comments %}
+            <b>{{ comment.time }}</b><br>
+            <b>{{ comment.name }}</b><br>
+            <b>{{ comment.mail }}</b><br>
+            {{ comment.text }}
+            <hr>
+        {% endfor %}
+    </div>
+{% endblock %}
