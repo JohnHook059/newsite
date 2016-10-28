@@ -1,20 +1,20 @@
-{% extends "base.html" %}
+{% extends "page_base.html" %}
 
-{% block body %}
-    <br>
+{% block way %}
+    <li><a href="/">Главная</a></li>
+    <li>&nbsp;> Написать нам</li>
+{% endblock %}
 
-    <div class="box visible">
-        <span class="bold">Фидбэк</span>
-        <form action="/feedback" method="post">
-            {% csrf_token %}
-            <textarea class="comment_field" id="name" name="name" cols="100" rows="1" maxlength="100"
-                      placeholder="введите ваше имя" autofocus required></textarea><br>
-            <textarea class="comment_field" id="mail" name="mail" cols="100" rows="1" maxlength="100"
-                      placeholder="введите ваш mail" required></textarea><br>
-            <textarea class="comment_field" id="text" name="text" cols="100" rows="15" maxlength="1000000"
-                      placeholder="введите ваше сообщение" required></textarea><br>
-            <input type="submit" value="Отправить">
-        </form>
-    </div>
-
+{% block text %}
+    <span class="bold">Написать нам</span>
+    <form action="/feedback" method="post">
+        {% csrf_token %}
+        <textarea class="comment_field" id="name" name="name" cols="120" rows="1" maxlength="100"
+                  placeholder="введите ваше имя" autofocus required></textarea><br>
+        <textarea class="comment_field" id="mail" name="mail" cols="120" rows="1" maxlength="100"
+                  placeholder="введите ваш mail" required></textarea><br>
+        <textarea class="comment_field" id="text" name="text" cols="120" rows="15" maxlength="1000000"
+                  placeholder="введите ваше сообщение" required></textarea><br>
+        <input type="submit" value="Отправить">
+    </form>
 {% endblock %}

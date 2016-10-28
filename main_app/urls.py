@@ -9,4 +9,6 @@ urlpatterns = [
     url(r'^underdev$', views.underdev, name='underdev'),
     url(r'^osago$', views.osago, name='osago'),
     url(r'^kasko$', views.kasko, name='kasko'),
+    url(r'^advantages$', views.advantages, name='advantages'),
+    url(r'^requisites$', views.requisites, name='requisites'),
 ]

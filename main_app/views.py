@@ -31,3 +31,9 @@ def osago(request):
 
 def kasko(request):
     return render(request, 'kasko.html')
+
+def advantages(request):
+    return render(request, 'advantages.html')
+
+def requisites(request):
+    return render(request, 'requisites.html')
