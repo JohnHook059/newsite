@@ -11,4 +11,8 @@ urlpatterns = [
     url(r'^kasko$', views.kasko, name='kasko'),
     url(r'^advantages$', views.advantages, name='advantages'),
     url(r'^requisites$', views.requisites, name='requisites'),
+    url(r'^property$', views.property, name='property'),
+    url(r'^smr$', views.smr, name='smr'),
+    url(r'^cargo$', views.cargo, name='cargo'),
+    url(r'^dms$', views.dms, name='dms'),
 ]

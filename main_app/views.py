@@ -37,3 +37,15 @@ def advantages(request):
 
 def requisites(request):
     return render(request, 'requisites.html')
+
+def property(request):
+    return render(request, 'property.html')
+
+def smr(request):
+    return render(request, 'smr.html')
+
+def cargo(request):
+    return render(request, 'cargo.html')
+
+def dms(request):
+    return render(request, 'dms.html')
